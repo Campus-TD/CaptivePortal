@@ -14,11 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
         <!-- Link hacia el archivo de estilos css -->
-        <link rel="stylesheet" href="css/login.css">
-        <style type="text/css">
-        </style>
-        <script type="text/javascript">
-        </script>
+        <link rel="stylesheet" href="/css/login.css">
     </head>
     
     <body>
@@ -31,20 +27,15 @@
                         <br>
                         <b>CAMPUS TD</b>
                     </div>
-                    <form id="loginform">
-                        <input type="text" name="usuario" placeholder="Matricula" required>
-                        <input type="text" name="name" placeholder="Nombre(s)" required>
-                        <input type="text" name="ape1" placeholder="Apellido Paterno" required>
-                        <input type="text" name="ape2" placeholder="Apellido Materno" required>
+                    <form id="loginForm">
+                        <input type="text" name="txtUser" placeholder="Ingresa tu usuario" required>
+                        <input type="password" placeholder="Ingresa tu contraseña" name="txtPassword" required>
                         
-
-                        <input type="password" placeholder="Crea Contraseña" name="password" required>
-                        
-                        <button type="submit" title="Ingresar" name="Ingresar">Registro</button>
+                        <button type="submit" title="Ingresar" name="btnLogin" id="btnLogin">Iniciar sesion</button>
                     </form>
                     <div class="pie-form">
                         <!-- <a href="#">¿Perdiste tu contraseña?</a> -->
-                        <a href="#">¿Si ya tienes Cuenta? Iniciar sesion</a>
+                        <a href="/register">¿No tienes Cuenta? Registrate</a>
                     </div>
                 </div>
                 <div class="inferior">

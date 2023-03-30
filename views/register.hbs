@@ -14,11 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
         <!-- Link hacia el archivo de estilos css -->
-        <link rel="stylesheet" href="css/login.css">
-        <style type="text/css">
-        </style>
-        <script type="text/javascript">
-        </script>
+        <link rel="stylesheet" href="/css/login.css">
     </head>
     
     <body>
@@ -31,15 +27,18 @@
                         <br>
                         <b>CAMPUS TD</b>
                     </div>
-                    <form id="loginform">
-                        <input type="text" name="usuario" placeholder="Usuario" required>
-                        <input type="password" placeholder="Contraseña" name="password" required>
+                    <form id="registerForm">
+                        <input type="text" name="txtUser" placeholder="Matricula" required>
+                        <input type="text" name="txtName" placeholder="Nombre(s)" required>
+                        <input type="text" name="txtLastName_F" placeholder="Apellido Paterno" required>
+                        <input type="text" name="txtLastName_M" placeholder="Apellido Materno" required>
+                        <input type="password" name="txtPassword" placeholder="Crea Contraseña" required>
                         
-                        <button type="submit" title="Ingresar" name="Ingresar">Iniciar sesion</button>
+                        <button type="submit" title="Ingresar" id="btnRegister">Registro</button>
                     </form>
                     <div class="pie-form">
                         <!-- <a href="#">¿Perdiste tu contraseña?</a> -->
-                        <a href="register.html">¿No tienes Cuenta? Registrate</a>
+                        <a href="#">¿Si ya tienes Cuenta? Iniciar sesion</a>
                     </div>
                 </div>
                 <div class="inferior">
@@ -49,4 +48,8 @@
         </div>
             
     </body>
+
+    <script src="/js/functions.js"></script>
+    <script src="/js/libs/sweet-alert/sweet-alert.min.js"></script>
+    <script src="/js/register.js"></script>
 </html>
